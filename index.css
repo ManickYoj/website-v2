@@ -1,0 +1,60 @@
+html {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	width: 860px;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+h3, h4 {
+	margin: 0 0 5px 0;
+}
+
+ul.nav-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav-link {
+	display: inline;
+	margin-right: 10px;
+}
+
+.profile-image {
+	margin: 0 auto;
+	display: block;
+}
+
+.snippet {
+	display: flex;
+}
+
+.snippet-image-cont {
+	margin-right: 20px;
+	flex-shrink: 0;
+	width: 200px;
+	height: 200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.snippet-image {
+	max-width: 200px;
+	max-height: 200px;
+
+	display: block;
+	margin: 0 auto;
+}
+
+.snippet-text {
+
+}
