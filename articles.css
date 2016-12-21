@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Miller';
+    src: url('fonts/miller.woff2') format('woff2'),
+         url('fonts/miller.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.header-words {
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-left: 1em;
+}
+
+.faded {
+  opacity: .8;
+}
+
+#header-name {
+  color: #111;
+}
+
+#header-catchtitle {
+  display: none;
+  color: #333;
+}
+
+.block {
+  height: 1em;
+  width: 1em;
+  background-color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article-head {
+  min-height: 500px;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.logo-box {
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1em 0;
+}
+
+.logo {
+  max-height: 30px;
+  /*max-width: 100px;*/
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: peru;
+  transition: all 0.2s linear;
+}
+
+a:visited {
+  color: peru;
+}
+
+a:hover,
+a:focus {
+  color: orange-red;
+}
+
+h1, h2, h3 {
+  font-family: helvetica, sans-serif;
+  line-height: 1.5;
+  /*letter-spacing: 1px;*/
+  font-weight: bold;
+  color: #111;
+}
+
+h3 {
+  margin-top: 3em;
+  font-size: 1.3em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  margin-bottom: 2em;
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  width: 100%;
+  color: #333;
+}
+
+.light {
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #666;
+}
+
+.subtitle-notes {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.subtitle-note {
+  font-family: helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 500px;
+}
+
+.mini-block {
+  height: 1em;
+  width: 1em;
+  background-color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.margin-right { margin-right: .5em; }
+.margin-left { margin-left: .5em; }
+
+.caption-heading {
+  color: #111;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.note {
+  background-color: #DDD;
+  color: #333;
+  font-size: .9em;
+  padding: 1em;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+article {
+	max-width: 1000px;
+	margin: 2em auto;
+}
+
+.title-box {
+  min-width: 50%;
+}
+
+.title-pic {
+  display: none;
+}
+
+figure {
+  width: 100%;
+  margin: 2em auto;
+}
+
+p, ol, ul {
+  width: 100%;
+  font-family: 'Miller', serif;
+  line-height: 1.25;
+  letter-spacing: .3px;
+  font-size: 1.2em;
+  color: #111;
+}
+
+figure.full {
+  width: 100%;
+  float: none;
+  margin: 2em auto;
+  padding: 0;
+}
+
+img.full {
+  width: 100%;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+header {
+  display: flex;
+  margin-top: .5em;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  figure {
+    width: 30%;
+    float: right;
+    margin: 0 0 0 4em;
+    padding-right: 3em;
+  }
+
+  p, ul, ol {
+    width: 70%;
+    font-size: 1.25em;
+    line-height: 1.5;
+  }
+
+  .flex {
+    align-items: flex-start;
+  }
+
+  .title-pic {
+    max-height: 100%;
+    float: right;
+    width: 44%;
+    display: block;
+    padding: 0 3%;
+  }
+
+  .block {
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #333;
+    display: inline-block;
+  }
+
+  #header-catchtitle {
+    display: block;
+  }
+
+  #header-name {
+    font-weight: 600;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+}
+
+
+figcaption {
+  font-size: .9em;
+  margin-top: 1em;
+  color: #333;
+}
+
+
+
+/* Grove Images */
+#grove-iframe {
+  background: url("img/grove_iframe_cover.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#grove-iframe:hover,
+#grove-iframe:focus,
+#grove-iframe:active {
+  background: url("img/grove_iframe.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.gif {
+  width: 100%;
+  /*max-height: 664px;*/
+  padding-top: 160%;
+}
+
+#grove-readings {
+  background: url("img/grove_readings_cover.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#grove-readings:hover,
+#grove-readings:focus,
+#grove-readings:active {
+  background: url("img/grove_readings.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
